@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+1.	UC n°1 : Login withn the agentguichet account :
+  
+   - At the backend layer, the agentguichet user has the ROLE_AGENT_GUICHET role.
+     
+   - Enter the following account: username=[agentguichet, password= agentguichet]:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+     ![image](https://github.com/abbouformations/react-crud-example-axios-jwt/assets/135717843/10ddf4d7-0f1e-4f08-90e7-7e6730048c4b)
 
-## Available Scripts
 
-In the project directory, you can run:
+   - Click on the “Customers Management” menu for customer management:
 
-### `npm start`
+       ![image](https://github.com/abbouformations/react-crud-example-axios-jwt/assets/135717843/a9e1aa50-cb8a-4532-8c72-cadcbb9269df)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   - You can view the user profile by clicking on the Profile menu:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+     ![image](https://github.com/abbouformations/react-crud-example-axios-jwt/assets/135717843/05533574-cdbc-4f34-8fe2-4e981e31f534)
 
-### `npm test`
+2. UC n°2: connect with the agentguichet2 account
+   
+- At the backend layer, the agentguichet2 user has the ROLE_AGENT_GUICHET_GET role. This user can only consult customers and accounts.
+  
+- Enter the following account: username=[agentguichet2, password= agentguichet2]:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  ![image](https://github.com/abbouformations/react-crud-example-axios-jwt/assets/135717843/4caa8a7c-817c-4b72-8f82-a782201d6a84)
 
-### `npm run build`
+- Click on the Profile menu to view the user profile:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  ![image](https://github.com/abbouformations/react-crud-example-axios-jwt/assets/135717843/2101299c-7734-4162-85bb-0a3cb21c1282)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Click on the “Customers management” menu and notice that the user can only consult customers:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  ![image](https://github.com/abbouformations/react-crud-example-axios-jwt/assets/135717843/6435b85a-282e-4812-a65a-6002704312be)
 
-### `npm run eject`
+3. UC n°3: log in with the customer account
+   
+- At the backend layer, the client user has the ROLE_CLIENT role. This user can only consult his account, his data, his transactions and make transfers.
+  
+- Enter the following account: username=[client, password= client]:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  ![image](https://github.com/abbouformations/react-crud-example-axios-jwt/assets/135717843/f4a03fda-6b84-4621-81d3-27e384321c35)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Click on the Profile menu to view your profile:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  ![image](https://github.com/abbouformations/react-crud-example-axios-jwt/assets/135717843/2c2590e1-75a4-468d-8548-6f17f5471d35)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ - You notice that the application does not display the menus concerning the "agent guichet".
+   
+- If the customer tries, for example, to access the link http://localhost:3000/manage_customers, the application displays the following message:
 
-## Learn More
+![image](https://github.com/abbouformations/react-crud-example-axios-jwt/assets/135717843/568307fa-b51c-4e2e-86b4-42aab73bac95)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. UC n°3: log in with the admin account
+   
+- At the backend layer, the admin user has the following roles: ROLE_AGENT_GUICHET and ROLE_CLIENT. This user has all the authorizations.
+  
+- Enter the following account: username=[admin, password= admin]:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![image](https://github.com/abbouformations/react-crud-example-axios-jwt/assets/135717843/d0c8bc4a-460c-4e52-a61a-69d827b44e57)
 
-### Code Splitting
+- Click on the Profile menu to view your profile:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  ![image](https://github.com/abbouformations/react-crud-example-axios-jwt/assets/135717843/7303f16e-3a44-4a16-b5d2-c8f81dd5ab0f)
 
-### Analyzing the Bundle Size
+- Then click on the other menus to test the services.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+       
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
