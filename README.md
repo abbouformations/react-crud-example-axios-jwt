@@ -1,4 +1,4 @@
-1.	UC n°1 : Login withn the agentguichet account :
+1.	UC n°1 : Log in withn the agentguichet account :
   
    - At the backend layer, the agentguichet user has the ROLE_AGENT_GUICHET role.
      
